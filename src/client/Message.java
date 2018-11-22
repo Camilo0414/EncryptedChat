@@ -4,7 +4,12 @@ import java.io.Serializable;
 
 public class Message implements Serializable{
 	
-	private String ip, msg, nick;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 288451282991981084L;
+	private String ip, msg, nick; 
+	private boolean isDiffie;
 
 	public String getIp() {
 		return ip;
@@ -30,4 +35,12 @@ public class Message implements Serializable{
 		this.nick = nick;
 	}
 
+	public boolean isDiffie() {
+		return isDiffie;
+	}
+
+	public void setDiffie(boolean isDiffie) {
+		this.isDiffie = isDiffie;
+	}
+	
 }
